@@ -13,6 +13,10 @@ package cn.lcools.sort;
  * •重复步骤3，直到找到已排序的元素小于或者等于新元素的位置；
  * •将新元素插入到该位置后；
  * •重复步骤2~5。
+ *
+ * 算法分析
+ * 插入排序在实现上，通常采用in-place排序（即只需用到O(1)的额外空间的排序），因而在从后向前扫描过程中，
+ * 需要反复把已排序元素逐步向后挪位，为最新元素提供插入空间。
  */
 public class InsertionSort<T extends Comparable> implements SortInterface<T>{
     @Override
