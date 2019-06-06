@@ -17,7 +17,7 @@ package cn.lcools.sort;
 public class InsertionSort<T extends Comparable> implements SortInterface<T>{
     @Override
     public void sort(T[] array) throws Exception {
-        for(int i=0 ; i<array.length ; i++){
+        for(int i=0 ; i<array.length-1 ; i++){
             T current = array[i+1];
             int preIndex = i;
             while (preIndex>=0 && current.compareTo(array[preIndex])<0){
